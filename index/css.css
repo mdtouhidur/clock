@@ -1,0 +1,178 @@
+
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ededed;
+    animation: color-cheng-bg infinite 40s ;
+}
+@keyframes color-cheng-bg {
+    0%   {background-color: #000000	;}
+  5%  {background-color: #FFFFFF	;}
+  10%  {background-color: #FF0000	;}
+  15% {background-color: #00FF00	;}
+    20%  {background-color: #0000FF	;}
+    25%   {background-color: #FFFF00	;}
+  30%  {background-color: #00FFFF	;}
+  35%  {background-color: #FF00FF	;}
+  40% {background-color: #800000	;}
+    45%  {background-color: #008000	;}
+    50%   {background-color: #800080	;}
+  55%  {background-color: #008080	;}
+60%  {background-color: #000080	;}
+  65% {background-color: #00FFFF	;}
+    70%  {background-color: blue;}
+    75%   {background-color: red;}
+  80%  {background-color: #000000	;}
+  85%  {background-color: #00FF00	;}
+  90% {background-color: green;}
+    95%  {background-color: blue;}
+    100%   {background-color: red;}
+ 
+    
+}
+
+
+
+
+.clock {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 12px solid #fff0;
+    border-radius: 50%;
+    background: linear-gradient(145deg, #d5d, #fefefe);
+    box-shadow: 6px 6px 8px #dcdcdc,
+        -6px -6px 8px #fefefe,
+        inset 6px 6px 8px #dcdcdc,
+        inset -6px -6px 8px #fefefe;
+}
+
+.clock .clock-bg img {
+    width: 100%;
+    height: 100%;
+    opacity:10px;
+    
+}
+
+.clock::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 50%;
+    z-index: 15;
+}
+
+.clock .hour,
+.clock .minute,
+.clock .second {
+    position: absolute;
+}
+
+.clock .hour,
+.clock .hour .hr {
+    width: 160px;
+    height: 160px;
+}
+
+.clock .minute,
+.clock .minute .min {
+    width: 190px;
+    height: 190px;
+}
+
+.clock .second,
+.clock .second .sec {
+    width: 230px;
+    height: 230px;
+}
+
+.clock .hour .hr,
+.clock .minute .min,
+.clock .second .sec {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.clock .hour .hr::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: darkblue;
+    z-index: 10;
+    border-radius: 10px;
+}
+
+.clock .minute .min::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background: #30303b;
+    z-index: 11;
+    border-radius: 8px;
+}
+
+.clock .second .sec::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 140px;
+    background: red;
+    z-index: 12;
+    border-radius: 2px;
+}
+
+.touhid {
+    position: fixed;
+    top: 10px;
+    color: red;
+    font-size: 40px;
+    animation: color-cheng-text infinite 20s ;
+    animation-delay: 1s;
+    transition:;
+    text-shadow: 0 0 20px;
+}
+
+@keyframes color-cheng-text {
+    0%   {color: #000000	;}
+  5%  {color: #FFFFFF	;}
+  10%  {color: #FF0000	;}
+  15% {color: #00FF00	;}
+    20%  {color: #0000FF	;}
+    25%   {color: #FFFF00	;}
+  30%  {color: #00FFFF	;}
+  35%  {color: #FF00FF	;}
+  40% {color: #800000	;}
+    45%  {color: #008000	;}
+    50%   {color: #800080	;}
+  55%  {color: #008080	;}
+60%  {color: #000080	;}
+  65% {color: #00FFFF	;}
+    70%  {color: blue;}
+    75%   {color: red;}
+  80%  {color: #000000	;}
+  85%  {color: #00FF00	;}
+  90% {color: green;}
+    95%  {color: blue;}
+    100%   {color: red;}
+ 
+    
+}
